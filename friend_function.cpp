@@ -4,6 +4,7 @@ class abc
 {
 private:
     int a, b, c;
+    friend void display(abc s);
 
 public:
     void getdata()
@@ -11,7 +12,6 @@ public:
         a = 10;
         b = 20;
     }
-    friend void display(abc s);
 };
 void display(abc s)
 {
